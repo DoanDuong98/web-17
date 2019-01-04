@@ -1,0 +1,52 @@
+p {
+	color: #ff00ea;
+}
+
+.text-red {
+	color: #ff0000;
+}
+
+ul li {
+	color: #8a2be2;
+}
+
+ul>li {
+	color: #0000ff;
+}
+
+a:hover {
+	color: #00ffff;
+}
+
+/* img:hover {
+	transform: scale(2);
+} */
+
+p {
+	height: 400px;
+	background-color: #0000ff;
+	background-image: url('https://ss-images.catscdn.vn/2018/08/26/3551433/link-ka-blogtin-1.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	/* border-color: #ff00ea;
+	border-width: 10px;
+	border-style: dotted; */
+	border: 10px dashed #ff00ea;
+}
+
+.img_holder {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+img {
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

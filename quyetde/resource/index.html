@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Hello world</title>
+		<!-- <script src=""></script> -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1 id="top">Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+
+		<p class="text-red">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum in neque nec tincidunt. Suspendisse potenti. Aliquam et turpis quis massa tempor cursus. Phasellus eleifend accumsan quam quis mollis. Aliquam quis aliquam lorem. Praesent lobortis nibh quis rhoncus pharetra. Suspendisse hendrerit elit et ligula sodales, non elementum tellus euismod. Sed finibus eros nunc, sed consectetur lorem accumsan ut. Nulla gravida mauris purus, eu sagittis diam consectetur quis. Etiam vel massa volutpat, scelerisque ipsum id, efficitur leo. Suspendisse finibus, nibh nec congue sollicitudin, quam nisi vehicula nisi, et dapibus nisl odio et lacus. Proin vel congue nibh. Donec ultrices non augue id luctus. Phasellus urna nunc, pulvinar pharetra egestas at, interdum id mi. Praesent dui elit, pretium vel efficitur eleifend, accumsan vel libero. Duis pulvinar, arcu in fringilla sagittis, tortor libero semper leo, vitae posuere neque erat in felis.
+		</p>
+		<div>
+			<img src="https://i.ytimg.com/vi/EOIy-3N6UHk/maxresdefault.jpg" alt="Trong ảnh này có thể có một người"/>
+			<div>
+				Suspendisse potenti. Curabitur cursus lectus in vestibulum aliquam. Aenean in dolor ac arcu efficitur congue. Donec ut augue vel orci cursus tincidunt. Cras efficitur bibendum consectetur. Cras non sem et sem tincidunt suscipit non id purus. Sed sollicitudin sem ac augue eleifend tincidunt. Aliquam vitae dolor sit amet arcu elementum dapibus vel nec turpis. In sit amet lorem vitae justo varius fringilla. Nulla venenatis justo vitae facilisis imperdiet. Praesent euismod leo quis euismod interdum. Maecenas volutpat risus vel pretium mattis. Quisque at ex id ex mollis vehicula. Quisque interdum accumsan fermentum.
+			</div>
+		</div>
+		<div>
+			Praesent
+		</div>
+		<div>
+			<span>Suspendisse</span>
+		</div>
+
+		<span>Span 1</span>
+		<span>Span 2</span>
+		<span>Span 3</span>
+		
+		<div class="img_holder">
+			<img src="https://i.ytimg.com/vi/EOIy-3N6UHk/maxresdefault.jpg" alt="Trong ảnh này có thể có một người">
+		</div>
+		
+
+		<a href="https://google.com" target="_blank">Google</a>
+		<a href="#top">Go to top</a>
+
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<ol>
+			<li>Child 1</li>
+			<li>Child 2</li>
+			<li>Child 3</li>
+			<li>Child 4</li>
+			<li>Child 5</li>
+		</ol>
+
+		<ul>
+			<li>
+				Child 1
+				<ol>
+					<li>Child 1</li>
+					<li>Child 2</li>
+					<li>Child 3</li>
+					<li>Child 4</li>
+					<li>Child 5</li>
+				</ol>
+			</li>
+			<li>Child 2</li>
+			<li>Child 3</li>
+			<li>Child 4</li>
+			<li>Child 5</li>
+		</ul>
+
+		<nav>Navbar</nav>
+		<header>Header</header>
+		<footer>Footer</footer>
+		<article>Article</article>
+		<section>Section</section>
+		<div>Divis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ion</div>
+		<aside>Aside&copy;</aside>
+
+		<form action="" method="POST">
+			<input type="text" value="ABC" required>
+			<input type="email" required placeholder="Nhap email vao day">
+			<input type="number" readonly>
+			<input type="password" disabled> <!-- sdaasd -->
+			<input type="file" multiple>
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="radio" name="answer">
+			<input type="radio" name="answer">
+			<input type="radio" name="answer">
+			<input type="date">
+			<input type="color">
+			<input type="hidden">
+			<select name="" id="">
+				<option value="">A</option>
+				<option value="">B</option>
+				<option value="">C</option>
+				<option value="">D</option>
+			</select>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<button type="button" id="hello">Hello</button>
+			<input type="submit" value="Gửi">
+		</form>
+
+		<textarea name="" id="content" cols="30" rows="10" maxlength="200"></textarea>
+		<div>Còn <span id="count">200</span>/200 ký tự</div>
+
+		<script src="main.js"></script>
+		<script>
+			document.getElementById("hello").addEventListener("click", function() {
+				console.log("AAAAAAAA");
+			});
+			document.getElementById("content").addEventListener("input", function() {
+				document.getElementById("count").innerText = 200 - document.getElementById("content").value.length;
+				var check = 200 - document.getElementById("content").value.length;
+				console.log(check);
+			});
+		</script>
+	</body>
+</html>
